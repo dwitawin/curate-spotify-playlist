@@ -1,0 +1,44 @@
+=================================================
+Milestone 3
+
+Nama  : Dwita Alya Windani
+Batch : FTDS-RMT-024
+
+Menjawab Pertanyaan Conceptual Problems.
+=================================================
+
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+NoSQL adalah teknologi basis data (database) yang bentuk datanya bukanlah data tabular atau structured data dan digunakan pada data non-relational.
+Biasanya database NoSQL memiliki bentuk unstructured data atau semi-structured seperti documents, key-value, graph, wide-column, dan lain sebagainya.
+Fitur-fitur database berbasis NoSQL antara lain adalah memiliki skema yang fleksibel, bisa diskalakan, proses query yang cepat.
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+Waktu untuk menggunakan NoSQL adalah ketika:
+- Melakukan development dengan kondisi cepat (Fast-Paced dan Agile).
+- Kebutuhan untuk menyimpan data unstructured dan semi-structured. 
+- Volume data besar.
+- Ada kebutuhan untuk scaling arsitektur.
+- Digunakan untuk pembuatan modern app/microservices yang membutuhkan real time streaming dan monitoring.
+Waktu untuk menggunakan RDBMS:
+- Kebutuhan untuk menyimpan data structured / tabular.
+- Relational data.
+- Volume data kecil hingga medium.
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+- MongoDB
+Keunggulan MongoDB: Skema dinamis, sistem data dokumen (menggunakan JSON yang otomatis dikonversi menjadi BSON).
+- Redis
+Keunggulan Redis: Memiliki command line tools yang bisa memudahkan proses query.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+Airflow merupakan sebuat platform open source yang memungkinkan software developer atau data engineer untuk developing, scheduling, dan monitoring batch oriented workflow.
+Umumnya Airflow digunakan untuk scheduling tasks / otomasi proses berjalannya tasks yang sudah dibuat sebelumnya.
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+Great Expectations adalah library python yang dikhususkan untuk menjalankan proses data validasi pada pipeline data. 
+Cara untuk verifikasi kevalidan datanya adalah dengan menggunakan kondisi-kondisi yang sudah tersedia pada library dan dicobakan pada dataset.
+Sebagai contoh untuk mengecek apakah data pada satu kolom memiliki null values bisa digunakan 'expect_column_values_to_not_be_null'. Jika hasilnya success: true maka datanya tervalidasi tidak ada null values.
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll)!
+Definisi: Batch Processing adalah sebuah metode yang digunakan komputer untuk menjalankan proses pengolahan data dengan volume tertentu pada suatu periode/interval tertentu.
+Contoh kasus penggunaan: Pada sebuah perusahaan jasa e-commerce selalu melakukan pemrosesan data order hari ini yang belum terproses pada tengah malam untuk selanjutnya data yang sudah terkumpul tersebut akan dikirim ke database warehouse untuk diproses oleh tim operasional pada pagi harinya.
